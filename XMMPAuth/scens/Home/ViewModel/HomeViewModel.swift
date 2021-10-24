@@ -33,6 +33,8 @@ class HomeViewModel{
             } else {
                 delegate?.updateList(status: 3)
             }
+        }else {
+            delegate?.updateList(status: 3)
         }
         
     }
