@@ -25,10 +25,17 @@ class HomeViewController: UIViewController {
         viewModel = HomeViewModel()
         viewModel?.delegate = self
         activity.startAnimating()
-        viewModel?.fetchCities()
+        viewModel?.fetchLocalStorage()
+       
         cityListTableView.register(UINib(nibName: CityTableViewCell.identifier, bundle: nil), forCellReuseIdentifier: CityTableViewCell.identifier)
         cityListTableView.dataSource = self
         cityListTableView.delegate = self
+        let notificationCenter = NotificationCenter.default
+         notificationCenter.addObserver(self, selector: #selector(appMovedToBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)
+    }
+    //MARK:app moved to background
+    @objc func appMovedToBackground() {
+        viewModel?.saveWeatherData()
     }
 
 }
@@ -39,7 +46,10 @@ extension HomeViewController:CityUpdateDelegate {
             self.activity.stopAnimating()
             self.cityListTableView.reloadData()
         }
-       
+        if status == 3 {
+            activity.startAnimating()
+            viewModel?.fetchCities()
+        }
     }
     
     
