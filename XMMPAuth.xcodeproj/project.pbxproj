@@ -3,18 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		138E65D9C42A858D6B64FB43 /* Pods_XMMPAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 686A5BFADF31FE458F1CA0F0 /* Pods_XMMPAuth.framework */; };
+		802A57832724547100FC0AE0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A57822724547100FC0AE0 /* BaseViewController.swift */; };
+		802A57892724549B00FC0AE0 /* XMPPConfigureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802A57882724549B00FC0AE0 /* XMPPConfigureManager.swift */; };
+		80A53368272491DF0061D1CA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A53366272491DF0061D1CA /* HomeViewController.swift */; };
+		80A53369272491DF0061D1CA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A53367272491DF0061D1CA /* HomeViewController.xib */; };
+		80A53370272492F90061D1CA /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5336E272492F90061D1CA /* CityTableViewCell.swift */; };
+		80A53371272492F90061D1CA /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A5336F272492F90061D1CA /* CityTableViewCell.xib */; };
 		80CC21192723CA6E005ACA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC21182723CA6E005ACA83 /* AppDelegate.swift */; };
 		80CC211B2723CA6E005ACA83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC211A2723CA6E005ACA83 /* SceneDelegate.swift */; };
-		80CC211D2723CA6E005ACA83 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC211C2723CA6E005ACA83 /* ViewController.swift */; };
-		80CC21202723CA6E005ACA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC211E2723CA6E005ACA83 /* Main.storyboard */; };
 		80CC21222723CA70005ACA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CC21212723CA70005ACA83 /* Assets.xcassets */; };
 		80CC21252723CA70005ACA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80CC21232723CA70005ACA83 /* LaunchScreen.storyboard */; };
 		80CC21302723CA70005ACA83 /* XMMPAuthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC212F2723CA70005ACA83 /* XMMPAuthTests.swift */; };
 		80CC213B2723CA70005ACA83 /* XMMPAuthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC213A2723CA70005ACA83 /* XMMPAuthUITests.swift */; };
+		80CC21592723CC5E005ACA83 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC21572723CC5E005ACA83 /* AuthViewController.swift */; };
+		80CC215A2723CC5E005ACA83 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80CC21582723CC5E005ACA83 /* AuthViewController.xib */; };
+		80CC21612723CD6D005ACA83 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC21602723CD6D005ACA83 /* BaseNavigationController.swift */; };
+		92509D9B9084C13BBBB31837 /* Pods_XMMPAuth_XMMPAuthUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1B4FB696E610A933BB5457 /* Pods_XMMPAuth_XMMPAuthUITests.framework */; };
+		FB0395D79F8856F96E4EE026 /* Pods_XMMPAuthTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83266EAB0A28F4AE09536B0E /* Pods_XMMPAuthTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +45,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C1B4FB696E610A933BB5457 /* Pods_XMMPAuth_XMMPAuthUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMMPAuth_XMMPAuthUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		310C6AE53138D67222E47D7D /* Pods-XMMPAuthTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuthTests.release.xcconfig"; path = "Target Support Files/Pods-XMMPAuthTests/Pods-XMMPAuthTests.release.xcconfig"; sourceTree = "<group>"; };
+		4FA3C672D85918D4F63BB2A6 /* Pods-XMMPAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuth.release.xcconfig"; path = "Target Support Files/Pods-XMMPAuth/Pods-XMMPAuth.release.xcconfig"; sourceTree = "<group>"; };
+		686A5BFADF31FE458F1CA0F0 /* Pods_XMMPAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMMPAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78542FE4DFCB2284C29F5FD7 /* Pods-XMMPAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuth.debug.xcconfig"; path = "Target Support Files/Pods-XMMPAuth/Pods-XMMPAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		802A57822724547100FC0AE0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		802A57882724549B00FC0AE0 /* XMPPConfigureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMPPConfigureManager.swift; sourceTree = "<group>"; };
+		80A53366272491DF0061D1CA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		80A53367272491DF0061D1CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		80A5336E272492F90061D1CA /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		80A5336F272492F90061D1CA /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		80CC21152723CA6E005ACA83 /* XMMPAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMMPAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CC21182723CA6E005ACA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CC211A2723CA6E005ACA83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		80CC211C2723CA6E005ACA83 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		80CC211F2723CA6E005ACA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		80CC21212723CA70005ACA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80CC21242723CA70005ACA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80CC21262723CA70005ACA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +68,13 @@
 		80CC21362723CA70005ACA83 /* XMMPAuthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMMPAuthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CC213A2723CA70005ACA83 /* XMMPAuthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMMPAuthUITests.swift; sourceTree = "<group>"; };
 		80CC213C2723CA70005ACA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80CC21572723CC5E005ACA83 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		80CC21582723CC5E005ACA83 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		80CC21602723CD6D005ACA83 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		83266EAB0A28F4AE09536B0E /* Pods_XMMPAuthTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMMPAuthTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A3805E01087E34998A12E9 /* Pods-XMMPAuth-XMMPAuthUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuth-XMMPAuthUITests.debug.xcconfig"; path = "Target Support Files/Pods-XMMPAuth-XMMPAuthUITests/Pods-XMMPAuth-XMMPAuthUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B1A4ECEFBA707297AC908CFC /* Pods-XMMPAuth-XMMPAuthUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuth-XMMPAuthUITests.release.xcconfig"; path = "Target Support Files/Pods-XMMPAuth-XMMPAuthUITests/Pods-XMMPAuth-XMMPAuthUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E9220EA1B529CA95F3FA4F39 /* Pods-XMMPAuthTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMMPAuthTests.debug.xcconfig"; path = "Target Support Files/Pods-XMMPAuthTests/Pods-XMMPAuthTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				138E65D9C42A858D6B64FB43 /* Pods_XMMPAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0395D79F8856F96E4EE026 /* Pods_XMMPAuthTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +98,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92509D9B9084C13BBBB31837 /* Pods_XMMPAuth_XMMPAuthUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		802A57872724547800FC0AE0 /* ConfigureXMPP */ = {
+			isa = PBXGroup;
+			children = (
+				802A57882724549B00FC0AE0 /* XMPPConfigureManager.swift */,
+			);
+			path = ConfigureXMPP;
+			sourceTree = "<group>";
+		};
+		80A5336D272492D50061D1CA /* subViews */ = {
+			isa = PBXGroup;
+			children = (
+				80A5336E272492F90061D1CA /* CityTableViewCell.swift */,
+				80A5336F272492F90061D1CA /* CityTableViewCell.xib */,
+			);
+			path = subViews;
+			sourceTree = "<group>";
+		};
 		80CC210C2723CA6E005ACA83 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				80CC212E2723CA70005ACA83 /* XMMPAuthTests */,
 				80CC21392723CA70005ACA83 /* XMMPAuthUITests */,
 				80CC21162723CA6E005ACA83 /* Products */,
+				B8A8AF6FB14B0191B42B4BA5 /* Pods */,
+				D664E8EA81AB378C1CEEE605 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +147,10 @@
 		80CC21172723CA6E005ACA83 /* XMMPAuth */ = {
 			isa = PBXGroup;
 			children = (
+				80CC215E2723CCDB005ACA83 /* common */,
+				80CC214C2723CAC3005ACA83 /* scens */,
 				80CC21182723CA6E005ACA83 /* AppDelegate.swift */,
 				80CC211A2723CA6E005ACA83 /* SceneDelegate.swift */,
-				80CC211C2723CA6E005ACA83 /* ViewController.swift */,
-				80CC211E2723CA6E005ACA83 /* Main.storyboard */,
 				80CC21212723CA70005ACA83 /* Assets.xcassets */,
 				80CC21232723CA70005ACA83 /* LaunchScreen.storyboard */,
 				80CC21262723CA70005ACA83 /* Info.plist */,
@@ -128,6 +176,75 @@
 			path = XMMPAuthUITests;
 			sourceTree = "<group>";
 		};
+		80CC214B2723CAB4005ACA83 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				80CC21572723CC5E005ACA83 /* AuthViewController.swift */,
+				80CC21582723CC5E005ACA83 /* AuthViewController.xib */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		80CC214C2723CAC3005ACA83 /* scens */ = {
+			isa = PBXGroup;
+			children = (
+				80CC214D2723CAFB005ACA83 /* Home */,
+				80CC214B2723CAB4005ACA83 /* Auth */,
+			);
+			path = scens;
+			sourceTree = "<group>";
+		};
+		80CC214D2723CAFB005ACA83 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				80A5336D272492D50061D1CA /* subViews */,
+				80A53366272491DF0061D1CA /* HomeViewController.swift */,
+				80A53367272491DF0061D1CA /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		80CC215E2723CCDB005ACA83 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				802A57872724547800FC0AE0 /* ConfigureXMPP */,
+				80CC215F2723CCF3005ACA83 /* Base */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		80CC215F2723CCF3005ACA83 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				80CC21602723CD6D005ACA83 /* BaseNavigationController.swift */,
+				802A57822724547100FC0AE0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		B8A8AF6FB14B0191B42B4BA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78542FE4DFCB2284C29F5FD7 /* Pods-XMMPAuth.debug.xcconfig */,
+				4FA3C672D85918D4F63BB2A6 /* Pods-XMMPAuth.release.xcconfig */,
+				94A3805E01087E34998A12E9 /* Pods-XMMPAuth-XMMPAuthUITests.debug.xcconfig */,
+				B1A4ECEFBA707297AC908CFC /* Pods-XMMPAuth-XMMPAuthUITests.release.xcconfig */,
+				E9220EA1B529CA95F3FA4F39 /* Pods-XMMPAuthTests.debug.xcconfig */,
+				310C6AE53138D67222E47D7D /* Pods-XMMPAuthTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D664E8EA81AB378C1CEEE605 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				686A5BFADF31FE458F1CA0F0 /* Pods_XMMPAuth.framework */,
+				2C1B4FB696E610A933BB5457 /* Pods_XMMPAuth_XMMPAuthUITests.framework */,
+				83266EAB0A28F4AE09536B0E /* Pods_XMMPAuthTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80CC213F2723CA70005ACA83 /* Build configuration list for PBXNativeTarget "XMMPAuth" */;
 			buildPhases = (
+				F39D397C3CF1482EB11CD26C /* [CP] Check Pods Manifest.lock */,
 				80CC21112723CA6E005ACA83 /* Sources */,
 				80CC21122723CA6E005ACA83 /* Frameworks */,
 				80CC21132723CA6E005ACA83 /* Resources */,
+				3778ACAA365058A1498673FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +271,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80CC21422723CA70005ACA83 /* Build configuration list for PBXNativeTarget "XMMPAuthTests" */;
 			buildPhases = (
+				8C692B15322D9B4237DEE664 /* [CP] Check Pods Manifest.lock */,
 				80CC21272723CA70005ACA83 /* Sources */,
 				80CC21282723CA70005ACA83 /* Frameworks */,
 				80CC21292723CA70005ACA83 /* Resources */,
@@ -170,9 +290,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80CC21452723CA70005ACA83 /* Build configuration list for PBXNativeTarget "XMMPAuthUITests" */;
 			buildPhases = (
+				9EF732717AF77B45B5D9C9EF /* [CP] Check Pods Manifest.lock */,
 				80CC21322723CA70005ACA83 /* Sources */,
 				80CC21332723CA70005ACA83 /* Frameworks */,
 				80CC21342723CA70005ACA83 /* Resources */,
+				0603D5D7FC0F6EE4DF6A94A9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +353,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A53371272492F90061D1CA /* CityTableViewCell.xib in Resources */,
 				80CC21252723CA70005ACA83 /* LaunchScreen.storyboard in Resources */,
+				80CC215A2723CC5E005ACA83 /* AuthViewController.xib in Resources */,
 				80CC21222723CA70005ACA83 /* Assets.xcassets in Resources */,
-				80CC21202723CA6E005ACA83 /* Main.storyboard in Resources */,
+				80A53369272491DF0061D1CA /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +377,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0603D5D7FC0F6EE4DF6A94A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth-XMMPAuthUITests/Pods-XMMPAuth-XMMPAuthUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth-XMMPAuthUITests/Pods-XMMPAuth-XMMPAuthUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth-XMMPAuthUITests/Pods-XMMPAuth-XMMPAuthUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3778ACAA365058A1498673FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth/Pods-XMMPAuth-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth/Pods-XMMPAuth-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XMMPAuth/Pods-XMMPAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C692B15322D9B4237DEE664 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMMPAuthTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EF732717AF77B45B5D9C9EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMMPAuth-XMMPAuthUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F39D397C3CF1482EB11CD26C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XMMPAuth-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80CC21112723CA6E005ACA83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80CC211D2723CA6E005ACA83 /* ViewController.swift in Sources */,
+				802A57832724547100FC0AE0 /* BaseViewController.swift in Sources */,
+				80CC21612723CD6D005ACA83 /* BaseNavigationController.swift in Sources */,
 				80CC21192723CA6E005ACA83 /* AppDelegate.swift in Sources */,
+				80CC21592723CC5E005ACA83 /* AuthViewController.swift in Sources */,
 				80CC211B2723CA6E005ACA83 /* SceneDelegate.swift in Sources */,
+				80A53368272491DF0061D1CA /* HomeViewController.swift in Sources */,
+				80A53370272492F90061D1CA /* CityTableViewCell.swift in Sources */,
+				802A57892724549B00FC0AE0 /* XMPPConfigureManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +528,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		80CC211E2723CA6E005ACA83 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				80CC211F2723CA6E005ACA83 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		80CC21232723CA70005ACA83 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,42 +657,47 @@
 		};
 		80CC21402723CA70005ACA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78542FE4DFCB2284C29F5FD7 /* Pods-XMMPAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XMMPAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mahendraVishwakarma.XMMPAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = mahendraVishwakarma.XMMPAuth12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		80CC21412723CA70005ACA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FA3C672D85918D4F63BB2A6 /* Pods-XMMPAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = XMMPAuth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = mahendraVishwakarma.XMMPAuth;
+				PRODUCT_BUNDLE_IDENTIFIER = mahendraVishwakarma.XMMPAuth12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		80CC21432723CA70005ACA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9220EA1B529CA95F3FA4F39 /* Pods-XMMPAuthTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +719,7 @@
 		};
 		80CC21442723CA70005ACA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 310C6AE53138D67222E47D7D /* Pods-XMMPAuthTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +741,7 @@
 		};
 		80CC21462723CA70005ACA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94A3805E01087E34998A12E9 /* Pods-XMMPAuth-XMMPAuthUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +761,7 @@
 		};
 		80CC21472723CA70005ACA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1A4ECEFBA707297AC908CFC /* Pods-XMMPAuth-XMMPAuthUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

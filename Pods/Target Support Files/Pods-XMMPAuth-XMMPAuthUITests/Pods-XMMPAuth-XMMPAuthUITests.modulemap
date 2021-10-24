@@ -1,0 +1,6 @@
+framework module Pods_XMMPAuth_XMMPAuthUITests {
+  umbrella header "Pods-XMMPAuth-XMMPAuthUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_XMMPAuth {
+  umbrella header "Pods-XMMPAuth-umbrella.h"
+
+  export *
+  module * { export * }
+}
