@@ -64,6 +64,14 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let city = viewModel?.cityListObj?.list?[indexPath.row] {
+            let cityObj = CityDetailViewController()
+            cityObj.title = "City Weather"
+            cityObj.viewModel = CityDetailsViewModel(cityInfo:city)
+            
+            self.navigationController?.pushViewController(cityObj, animated: true)
+        }
+        
         
     }
     

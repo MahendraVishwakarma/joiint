@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+class CityDetailsViewModel {
+    var cityDetails: CityList?
+    init(cityInfo:CityList?) {
+        self.cityDetails = cityInfo
+    }
+}
