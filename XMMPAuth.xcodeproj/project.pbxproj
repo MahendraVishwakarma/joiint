@@ -14,6 +14,13 @@
 		80A53369272491DF0061D1CA /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A53367272491DF0061D1CA /* HomeViewController.xib */; };
 		80A53370272492F90061D1CA /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5336E272492F90061D1CA /* CityTableViewCell.swift */; };
 		80A53371272492F90061D1CA /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80A5336F272492F90061D1CA /* CityTableViewCell.xib */; };
+		80A53376272509CB0061D1CA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A53375272509CB0061D1CA /* Utils.swift */; };
+		80A5337B27250B4F0061D1CA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A5337A27250B4F0061D1CA /* HomeViewModel.swift */; };
+		80AEB1B9272570B00005FBE3 /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEB1B8272570B00005FBE3 /* WebServices.swift */; };
+		80AEB1C1272572BD0005FBE3 /* CityListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEB1C0272572BD0005FBE3 /* CityListModel.swift */; };
+		80AEB1CB2725818E0005FBE3 /* CityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEB1C92725818D0005FBE3 /* CityDetailViewController.swift */; };
+		80AEB1CC2725818E0005FBE3 /* CityDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80AEB1CA2725818D0005FBE3 /* CityDetailViewController.xib */; };
+		80AEB1D1272581AE0005FBE3 /* CityDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AEB1D0272581AE0005FBE3 /* CityDetailViewModel.swift */; };
 		80CC21192723CA6E005ACA83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC21182723CA6E005ACA83 /* AppDelegate.swift */; };
 		80CC211B2723CA6E005ACA83 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CC211A2723CA6E005ACA83 /* SceneDelegate.swift */; };
 		80CC21222723CA70005ACA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80CC21212723CA70005ACA83 /* Assets.xcassets */; };
@@ -56,6 +63,13 @@
 		80A53367272491DF0061D1CA /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		80A5336E272492F90061D1CA /* CityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		80A5336F272492F90061D1CA /* CityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		80A53375272509CB0061D1CA /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		80A5337A27250B4F0061D1CA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		80AEB1B8272570B00005FBE3 /* WebServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		80AEB1C0272572BD0005FBE3 /* CityListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityListModel.swift; sourceTree = "<group>"; };
+		80AEB1C92725818D0005FBE3 /* CityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewController.swift; sourceTree = "<group>"; };
+		80AEB1CA2725818D0005FBE3 /* CityDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CityDetailViewController.xib; sourceTree = "<group>"; };
+		80AEB1D0272581AE0005FBE3 /* CityDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDetailViewModel.swift; sourceTree = "<group>"; };
 		80CC21152723CA6E005ACA83 /* XMMPAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMMPAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80CC21182723CA6E005ACA83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80CC211A2723CA6E005ACA83 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +134,74 @@
 				80A5336F272492F90061D1CA /* CityTableViewCell.xib */,
 			);
 			path = subViews;
+			sourceTree = "<group>";
+		};
+		80AEB1B7272570B00005FBE3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				80AEB1B8272570B00005FBE3 /* WebServices.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		80AEB1BD2725726B0005FBE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				80A5337A27250B4F0061D1CA /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80AEB1BE2725727B0005FBE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				80A5336D272492D50061D1CA /* subViews */,
+				80A53366272491DF0061D1CA /* HomeViewController.swift */,
+				80A53367272491DF0061D1CA /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		80AEB1BF2725728A0005FBE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				80AEB1C0272572BD0005FBE3 /* CityListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		80AEB1C527257CDB0005FBE3 /* CityDetails */ = {
+			isa = PBXGroup;
+			children = (
+				80AEB1C827257D140005FBE3 /* Model */,
+				80AEB1C727257D0A0005FBE3 /* Views */,
+				80AEB1C627257CFC0005FBE3 /* ViewModel */,
+			);
+			path = CityDetails;
+			sourceTree = "<group>";
+		};
+		80AEB1C627257CFC0005FBE3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				80AEB1D0272581AE0005FBE3 /* CityDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		80AEB1C727257D0A0005FBE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80AEB1C92725818D0005FBE3 /* CityDetailViewController.swift */,
+				80AEB1CA2725818D0005FBE3 /* CityDetailViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		80AEB1C827257D140005FBE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		80CC210C2723CA6E005ACA83 = {
@@ -188,8 +270,9 @@
 		80CC214C2723CAC3005ACA83 /* scens */ = {
 			isa = PBXGroup;
 			children = (
-				80CC214D2723CAFB005ACA83 /* Home */,
 				80CC214B2723CAB4005ACA83 /* Auth */,
+				80CC214D2723CAFB005ACA83 /* Home */,
+				80AEB1C527257CDB0005FBE3 /* CityDetails */,
 			);
 			path = scens;
 			sourceTree = "<group>";
@@ -197,9 +280,9 @@
 		80CC214D2723CAFB005ACA83 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				80A5336D272492D50061D1CA /* subViews */,
-				80A53366272491DF0061D1CA /* HomeViewController.swift */,
-				80A53367272491DF0061D1CA /* HomeViewController.xib */,
+				80AEB1BF2725728A0005FBE3 /* Model */,
+				80AEB1BE2725727B0005FBE3 /* View */,
+				80AEB1BD2725726B0005FBE3 /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -207,8 +290,10 @@
 		80CC215E2723CCDB005ACA83 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				80AEB1B7272570B00005FBE3 /* Networking */,
 				802A57872724547800FC0AE0 /* ConfigureXMPP */,
 				80CC215F2723CCF3005ACA83 /* Base */,
+				80A53375272509CB0061D1CA /* Utils.swift */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -355,6 +440,7 @@
 			files = (
 				80A53371272492F90061D1CA /* CityTableViewCell.xib in Resources */,
 				80CC21252723CA70005ACA83 /* LaunchScreen.storyboard in Resources */,
+				80AEB1CC2725818E0005FBE3 /* CityDetailViewController.xib in Resources */,
 				80CC215A2723CC5E005ACA83 /* AuthViewController.xib in Resources */,
 				80CC21222723CA70005ACA83 /* Assets.xcassets in Resources */,
 				80A53369272491DF0061D1CA /* HomeViewController.xib in Resources */,
@@ -485,10 +571,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80AEB1C1272572BD0005FBE3 /* CityListModel.swift in Sources */,
 				802A57832724547100FC0AE0 /* BaseViewController.swift in Sources */,
 				80CC21612723CD6D005ACA83 /* BaseNavigationController.swift in Sources */,
+				80A53376272509CB0061D1CA /* Utils.swift in Sources */,
+				80AEB1D1272581AE0005FBE3 /* CityDetailViewModel.swift in Sources */,
+				80AEB1B9272570B00005FBE3 /* WebServices.swift in Sources */,
+				80A5337B27250B4F0061D1CA /* HomeViewModel.swift in Sources */,
 				80CC21192723CA6E005ACA83 /* AppDelegate.swift in Sources */,
 				80CC21592723CC5E005ACA83 /* AuthViewController.swift in Sources */,
+				80AEB1CB2725818E0005FBE3 /* CityDetailViewController.swift in Sources */,
 				80CC211B2723CA6E005ACA83 /* SceneDelegate.swift in Sources */,
 				80A53368272491DF0061D1CA /* HomeViewController.swift in Sources */,
 				80A53370272492F90061D1CA /* CityTableViewCell.swift in Sources */,

@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="XMMPAuth" customModuleProvider="target">
             <connections>
+                <outlet property="activity" destination="fC7-uT-opE" id="wIm-Zj-bu2"/>
                 <outlet property="cityListTableView" destination="0RF-HD-f69" id="jO3-2C-j1g"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -24,10 +25,16 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="fC7-uT-opE">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" red="0.8980392157" green="0.13725490200000001" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fC7-uT-opE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7Db-t2-Dy3"/>
+                <constraint firstItem="fC7-uT-opE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Bif-VD-HDJ"/>
                 <constraint firstItem="0RF-HD-f69" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Gd6-yS-cbZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="0RF-HD-f69" secondAttribute="bottom" id="J4t-Pz-kzd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0RF-HD-f69" secondAttribute="trailing" id="VXH-2y-f4q"/>

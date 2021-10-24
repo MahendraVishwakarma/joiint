@@ -10,27 +10,38 @@ import XMPPFramework
 
 class XMPPConfigureManager:XMPPStreamDelegate{
     var stream:XMPPStream?
-    var isAuthenticationDone:Bool = false
+    
     var streamStatusTitle = ""
     weak var delegate: XMPPUpdateStatus?
-    init() {
+    private var password = ""
+    private let hostName = "hell.la"
+    
+    
+    init(_delegate:XMPPUpdateStatus?) {
+        self.delegate = _delegate
         setup()
     }
     
-    private func setup(){
+    private func setup() {
         stream = XMPPStream()
-        
         stream?.addDelegate(self, delegateQueue: DispatchQueue.main)
-        stream?.myJID = XMPPJID(string: "mahendra1@hell.la")
+    }
+    
+    func login(userName:String,password:String) {
+        self.password = password
+        let jID = userName + "@" + self.hostName
+        stream?.myJID = XMPPJID(string: jID)
+        self.streamStatusTitle = "initiating connection"
         
         do {
             try stream?.connect(withTimeout: XMPPStreamTimeoutNone)
         }
         catch {
             print("error occured in connecting")
+            self.streamStatusTitle = "invalid username"
         }
-        self.streamStatusTitle = "initiating connection"
-        
+       
+        delegate?.updateConnectionStatus()
     }
     
     func xmppStreamWillConnect(_ sender: XMPPStream) {
@@ -44,7 +55,7 @@ class XMPPConfigureManager:XMPPStreamDelegate{
         self.streamStatusTitle = "time out"
         delegate?.updateConnectionStatus()
     }
-   
+    
     func xmppStreamDidStartNegotiation(_ sender: XMPPStream) {
         print("xmppStreamDidStartNegotiation:")
         self.streamStatusTitle = "xmppStreamDidStartNegotiation"
@@ -53,7 +64,7 @@ class XMPPConfigureManager:XMPPStreamDelegate{
     
     func xmppStreamDidConnect(_ sender: XMPPStream) {
         do {
-            try stream?.authenticate(withPassword: "mahendra@123")
+            try stream?.authenticate(withPassword: self.password)
         }
         catch(_) {
             print("catch")
@@ -69,9 +80,9 @@ class XMPPConfigureManager:XMPPStreamDelegate{
         
     }
     func xmppStreamDidAuthenticate(_ sender: XMPPStream) {
-        print("auth done")
-        self.streamStatusTitle = "auth Done"
-        self.isAuthenticationDone = true
+        print("authenticate done")
+        self.streamStatusTitle = "Authenticate Done"
+       
         delegate?.updateConnectionStatus()
         
         sender.send(XMPPPresence())
@@ -79,25 +90,24 @@ class XMPPConfigureManager:XMPPStreamDelegate{
     func xmppStreamDidDisconnect(_ sender: XMPPStream, withError error: Error?) {
         print("stream disconnect")
         self.streamStatusTitle = "stream disconnected"
-        self.isAuthenticationDone = false
+       
         delegate?.updateConnectionStatus()
     }
     func xmppStream(_ sender: XMPPStream, didReceiveError error: DDXMLElement) {
         print("error")
-        self.isAuthenticationDone = false
+       
         self.streamStatusTitle = "error occured"
         delegate?.updateConnectionStatus()
     }
     
     func xmppStream(_ sender: XMPPStream, didNotRegister error: DDXMLElement) {
-        self.isAuthenticationDone = false
-        self.streamStatusTitle = "error occured"
+       
+      
         delegate?.updateConnectionStatus()
     }
     func xmppStream(_ sender: XMPPStream, didNotAuthenticate error: DDXMLElement) {
         print("auth failed")
         self.streamStatusTitle = "stream failed"
-        self.isAuthenticationDone = false
         delegate?.updateConnectionStatus()
     }
 }

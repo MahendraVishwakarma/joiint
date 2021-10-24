@@ -12,8 +12,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AuthViewController" customModule="XMMPAuth" customModuleProvider="target">
             <connections>
                 <outlet property="activity" destination="ERy-e1-WGX" id="GLd-ee-tw5"/>
+                <outlet property="btnAuth" destination="ZY1-ct-6pq" id="Mnz-Vr-cX6"/>
                 <outlet property="btnHome" destination="IOw-cp-rJH" id="zgC-Jv-leA"/>
                 <outlet property="statusLabel" destination="988-dN-W6c" id="EVr-Dg-Oux"/>
+                <outlet property="txtPassword" destination="2J9-uz-lC7" id="owK-ND-OB3"/>
+                <outlet property="txtUsername" destination="kRf-AU-3fA" id="SAD-OX-5Xt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -45,16 +48,54 @@
                         <action selector="homeScreen:" destination="-1" eventType="touchUpInside" id="vCu-75-h8L"/>
                     </connections>
                 </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mahendra1" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kRf-AU-3fA">
+                    <rect key="frame" x="20" y="279" width="374" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="3tb-Aa-JMQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="mahendra@123" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2J9-uz-lC7">
+                    <rect key="frame" x="20" y="323" width="374" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="1EN-wU-S27"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-ct-6pq">
+                    <rect key="frame" x="147" y="377" width="120" height="40"/>
+                    <color key="backgroundColor" red="0.69244970029999997" green="0.078431372550000003" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="S1T-MQ-eBB"/>
+                        <constraint firstAttribute="width" constant="120" id="YlK-hR-ra7"/>
+                    </constraints>
+                    <state key="normal" title="Authenticate">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="authAction:" destination="-1" eventType="touchUpInside" id="cZ8-C3-0Tx"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemIndigoColor"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="IOw-cp-rJH" secondAttribute="bottom" constant="14" id="2My-8p-8ik"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kRf-AU-3fA" secondAttribute="trailing" constant="20" id="2bP-UG-ELc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="988-dN-W6c" secondAttribute="trailing" constant="20" id="4yc-W8-KfC"/>
                 <constraint firstItem="ERy-e1-WGX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="8NR-qj-KhN"/>
+                <constraint firstItem="2J9-uz-lC7" firstAttribute="top" secondItem="kRf-AU-3fA" secondAttribute="bottom" constant="10" id="EVf-a0-u4k"/>
+                <constraint firstItem="ZY1-ct-6pq" firstAttribute="top" secondItem="2J9-uz-lC7" secondAttribute="bottom" constant="20" id="GJW-TU-Tcq"/>
+                <constraint firstItem="ZY1-ct-6pq" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M3k-qZ-GOG"/>
                 <constraint firstItem="988-dN-W6c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="MVq-T1-689"/>
+                <constraint firstItem="2J9-uz-lC7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZeI-W8-dTw"/>
                 <constraint firstItem="988-dN-W6c" firstAttribute="top" secondItem="ERy-e1-WGX" secondAttribute="bottom" constant="20" id="bjX-nf-mGP"/>
+                <constraint firstItem="kRf-AU-3fA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fre-hK-i4q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2J9-uz-lC7" secondAttribute="trailing" constant="20" id="pAw-sX-Nes"/>
                 <constraint firstItem="IOw-cp-rJH" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pfc-LX-H8a"/>
+                <constraint firstItem="ERy-e1-WGX" firstAttribute="top" secondItem="ZY1-ct-6pq" secondAttribute="bottom" constant="12.5" id="rwp-gb-oRj"/>
                 <constraint firstItem="ERy-e1-WGX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="w8e-fu-2sE"/>
             </constraints>
             <point key="canvasLocation" x="79.710144927536234" y="103.79464285714285"/>
